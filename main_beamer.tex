@@ -1,0 +1,53 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{metropolis}           % Use metropolis theme
+
+\title{Title\footnote{
+    {\tiny Support
+    \vspace{0.2cm}
+  }}}
+ \date{}
+    \author[shortname]{Cristina Ochoa\inst{1} \and Daniel Escudero\inst{2}}
+    \institute{\inst{1} Universidad de Antioquia \and \inst{2} Universidad Nacional de Colombia}
+
+% \logo{\includegraphics[width=3cm]{au_logo.png}\vspace{-25pt}\hspace{270pt}}
+
+\usepackage{bm}
+\usepackage{color}
+\usepackage{wasysym}
+\newtheorem{proposition}{Proposition}
+\usepackage{array,tabularx,booktabs,multirow}
+\usepackage{subcaption}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\newtcolorbox{emphbox}[1][]{title=#1}
+\newtcolorbox{alertbox}[1][]{colback=red!5!white,colframe=red!75!black, title=#1}
+\newtcolorbox{smallimagebox}[2][]{righthand width=#2,sidebyside,sidebyside gap=6mm,lower separated=false,adjusted title=#1,sidebyside align=center seam}
+\newtcolorbox[blend into=figures]{myfigure}[1][]{float=htb,capture=hbox,every float=\centering,#1}
+
+% \usepackage{tikz}
+% \usepackage{tikzpeople}
+% \usetikzlibrary{positioning, shapes.misc, fit, shapes.callouts, patterns, arrows, backgrounds}
+% \usetikzlibrary{positioning}
+% \usepackage{biblatex}
+
+% \addbibresource{references.bib}
+
+\newcommand{\nologo}{\setbeamertemplate{logo}{}}
+
+\input{macros}
+
+\begin{document}
+\maketitle
+
+{\nologo
+  \begin{frame}[standout]
+    Thank you!
+  \end{frame}
+}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
