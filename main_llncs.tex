@@ -1,0 +1,67 @@
+\documentclass[orivec]{llncs}
+
+\title{My template} 
+\author{Daniel\inst{1}, Escudero\inst{2}} 
+\institute{Aarhus\and University}
+\date{}
+
+%% Language and font encodings
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+%% Math
+\usepackage{amsmath,amssymb}
+
+%% Page style (KOMA-Script)
+\pagestyle{plain} % empty/headings/plain, takes effect with the next page that is output
+
+%% Sets page size and margins to specific values. Only if strictly needed
+% \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Fonts
+\usepackage{microtype} % Better typesetting
+
+%% Only for testing
+\usepackage{blindtext}
+
+%% Useful packages
+\usepackage{bm} % Bold math symbols (including e.g. Greek letters)
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs} % Nice tables
+\usepackage{enumitem} % Better lists
+\usepackage{hyperref} % Hyperlinks
+\usepackage{xcolor} % Colors like black!50
+
+%% If-then
+\usepackage{ifthen}
+\newboolean{mybool}
+\setboolean{mybool}{true} % \ifthenelse{\boolean{mybool}}{...IF}{...ELSE}
+
+%% Margin notes
+\usepackage{todonotes}
+\newcommand{\daniel}[2][]{\todo[color=blue!50,#1]{\textsf{Daniel:} #2}}
+
+\input{macros}
+\input{tcb.tex}
+
+\begin{document} 
+\maketitle 
+
+\begin{abstract}
+  My abstract
+\end{abstract}
+
+\begin{mybox}{mybox}
+  \blindtext
+\end{mybox}
+\xmybox{xmybox}
+% Dummy text
+
+\end{document} 
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
